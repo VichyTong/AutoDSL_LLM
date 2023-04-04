@@ -86,6 +86,25 @@ def is_meaningful(str):
         return True
 
 
+def get_classifications(relations):
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant to categorize among the provided relationships, classify a single  set of relationships that have operations, reagents, devices, and conditions"},
+            {"role": "user", "content": "['PSTCD BAP sequence', 'amplified by', 'PCR'], ['pXa-1 plasmid', 'used for', 'PCR amplification'], ['Pfu buffer', 'added in', 'PCR reaction'], ['upstream and downstream primer', 'added in', 'PCR reaction'], ['PCR reaction', 'set with conditions of', '35 cycles of denaturation, annealing, and extension'], ['PCR reaction', 'set with conditions of', 'final extension ste']"},
+            {"role": "assistant", "content": '{"operation": "PCR reaction", "reagent": "pXa-1 plasmid, Pfu buffer, upstream and downstream primer", "equipment": "None", "condition": "35 cycles of denaturation, annealing, and extension; final extension ste"}'},
+            {"role": "user", "content": relations}
+        ],
+        max_tokens=1000,
+        temperature=0,
+        top_p=1,
+        frequency_penalty=0.0,
+        presence_penalty=0.0,
+        stop=["END"]
+    )
+    return response['choices'][0]['message']['content']
+
+
 if __name__ == "__main__":
     with open('../../protocols/protocol_nprot-4.json', 'r') as f:
         data = json.load(f)
@@ -96,9 +115,12 @@ if __name__ == "__main__":
         equipments = get_equipments(equipments_text)
         procedure_divided = procedure_text.split('\n')
         relations = []
+        classifications = []
         for procedure in procedure_divided:
             if is_meaningful(procedure):
                 relations_divided = get_relations(reagents, equipments, procedure)
                 for relation_divided in relations_divided:
                     relations.append(relation_divided)
-        print(relations)
+                classifications.append(get_classifications(str(relations)))
+                relations.clear()
+        print(classifications)
