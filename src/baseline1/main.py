@@ -101,9 +101,9 @@ def get_classifications(relations):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant to categorize among the provided relationships, classify a single set of relationships that have operations, reagents, devices, and conditions. If there is no relationships, just output a single word \"None\"."},
+            {"role": "system", "content": "You are a helpful assistant to categorize among the provided relationships, classify set of relationships that have operations, reagents, equipments, and conditions. Out put in json form. If there is no relationships, just output a single word \"None\"."},
             {"role": "user", "content": "['PSTCD BAP sequence', 'amplified by', 'PCR'], ['pXa-1 plasmid', 'used for', 'PCR amplification'], ['Pfu buffer', 'added in', 'PCR reaction'], ['upstream and downstream primer', 'added in', 'PCR reaction'], ['PCR reaction', 'set with conditions of', '35 cycles of denaturation, annealing, and extension'], ['PCR reaction', 'set with conditions of', 'final extension ste']"},
-            {"role": "assistant", "content": '{"operation": "PCR reaction", "reagent": "pXa-1 plasmid, Pfu buffer, upstream and downstream primer", "equipment": "None", "condition": "35 cycles of denaturation, annealing, and extension; final extension ste"}'},
+            {"role": "assistant", "content": '[{"operation": "PCR reaction", "reagent": "pXa-1 plasmid, Pfu buffer, upstream and downstream primer", "equipment": "None", "condition": "35 cycles of denaturation, annealing, and extension; final extension ste"}]'},
             {"role": "user", "content": relations}
         ],
         max_tokens=1000,
@@ -116,7 +116,7 @@ def get_classifications(relations):
     resp = response['choices'][0]['message']['content']
     if re.match("None", resp) is not None:
         return None
-    return resp
+    return json.loads(resp)
 
 
 def parse_file(path, filename):
@@ -153,7 +153,8 @@ def parse_file(path, filename):
                         all_relations.append(relation_divided)
                     classification = get_classifications(str(relations))
                     if classification is not None:
-                        classifications.append(classification)
+                        for x in classification:
+                            classifications.append(x)
                     relations.clear()
         with open("../../output/baseline1/" + "KG_" + filename, "w", encoding='utf8') as out:
             json.dump(all_relations, out, indent=4, ensure_ascii=False)
