@@ -1,0 +1,221 @@
+[
+    {
+        "operation": "Harvest",
+        "reagent": "Water",
+        "equipments": "Flask",
+        "condition": "Select plants presenting tetrad-stage pollen and harvest the top ~30 cm part containing tassels."
+    },
+    {
+        "operation": "Release cells",
+        "reagent": "Isolation Buffer",
+        "equipments": "slide, glass tools",
+        "condition": "from the three same-stage anthers"
+    },
+    {
+        "operation": "Identification",
+        "reagent": "None",
+        "equipments": "microscope",
+        "condition": "samples containing the last-stage tetrads, from which are easy to separate into microspores and do not adhere to the glass tools."
+    },
+    {
+        "condition": "F1 tetrads have a high internal osmotic pressure. If micro-manipulating F1 tetrads, Isolation Buffer should be 27% D-sorbitol solution to balance the high pressure; if micro-manipulating tetrads from Inbred lines, much lower concentration (i.e. physiological concentration), of osmoticum is also sufficient. Do not use normal saline (NS) as Isolation Buffer, because metal ions may interfere with the amplification reaction later. From step 2) to step 5), cells should be kept in the Isolation Buffer."
+    },
+    {
+        "operation": "Isolate",
+        "reagent": "Isolation Buffer",
+        "equipments": "thin glass pipette",
+        "condition": "a single tetrad"
+    },
+    {
+        "operation": "isolate single tetrads",
+        "equipments": "thin glass pipette system, Programmable Microinjector PM 2000",
+        "condition": "under 4×microscopy"
+    },
+    {
+        "operation": "destroy the cell wall",
+        "equipments": "thin glass pipette system, Programmable Microinjector PM 2000",
+        "condition": "under 4×microscopy"
+    },
+    {
+        "operation": "isolate single microspores",
+        "equipments": "thin glass pipette system, Programmable Microinjector PM 2000",
+        "condition": "under 4×microscopy"
+    },
+    {
+        "operation": "Aspiration",
+        "reagent": null,
+        "equipments": null,
+        "condition": "Repeated aspiration in and out was used to destroy the cell walls and disrupt the tetrads."
+    },
+    {
+        "operation": "Separation",
+        "reagent": null,
+        "equipments": null,
+        "condition": "Four microspores can be separated without cell wall."
+    },
+    {
+        "operation": "Placing cells into PCR wells",
+        "reagent": "Isolation Buffer, PBS",
+        "equipments": "PCR wells",
+        "condition": "on ice"
+    },
+    {
+        "operation": "Lysis of cells",
+        "reagent": "Lysis buffer",
+        "equipments": "Homogenizer, sonicator, or vortex mixer",
+        "condition": "Depends on the specific protocol used."
+    },
+    {
+        "operation": "Add",
+        "reagent": "lysis Buffer (DLB : DTT = 11 : 1)",
+        "equipments": "centrifuge",
+        "condition": "into the PCR well containing a cell sample. Centrifuge briefly, then, incubate it at 65℃ for 10 min. Finally, Add 3μl Stop Buffer, centrifuge briefly, and keep the PCR well on ice."
+    },
+    {
+        "operation": "MDA Amplification",
+        "reagent": "random hexamers, dNTPs, phi29 DNA polymerase",
+        "equipments": "Thermal cycler, PCR tubes",
+        "condition": "30°C for 8 hours, 65°C for 20 min, 4°C hold."
+    },
+    {
+        "operation": "Prepare mixture",
+        "reagent": "Reaction Buffer, sc d2H2O, reaction enzyme",
+        "equipments": "PCR well",
+        "condition": "Centrifuge briefly and incubate at 30℃ for 8 h. Finally, incubate at 65℃ for 3min. Store it at -20℃ if not proceeding  to the next step immediately."
+    },
+    {
+        "relationship": "suitable for",
+        "subject": "MDA products",
+        "object": "Single Nucleotide Variants (SNV) analysis"
+    },
+    {
+        "relationship": "not appropriate for",
+        "subject": "MDA products",
+        "object": "quantification analysis (Copy Number Variations, CNV)"
+    },
+    {
+        "operation": "Quality control",
+        "reagent": "Whole-genome amplification products",
+        "equipments": "Agilent 2100 Bioanalyzer",
+        "condition": "None"
+    },
+    {
+        "operation": "Dilution",
+        "reagent": "amplification product",
+        "condition": "1:50 dilution"
+    },
+    {
+        "operation": "Polymerase chain reaction",
+        "reagent": "10 markers",
+        "equipments": "PCR machine",
+        "condition": "not specified"
+    },
+    {
+        "operation": "PCR",
+        "reagent": "diluted DNA, forward primer, reverse primer, PCR Buffer, dNTP, rTaq",
+        "equipments": "PCR machine",
+        "condition": "cycling parameters"
+    },
+    {
+        "operation": "2% Agarose gel electrophoresis",
+        "reagent": "PCR product",
+        "equipments": "Gel electrophoresis apparatus",
+        "condition": "None"
+    },
+    {
+        "operation": "Quality check",
+        "reagent": "PCR product",
+        "equipments": "None",
+        "condition": "Sample with no less than 8 of the 10 markers successfully amplified, is considered to be of a quality sufficient to make a library."
+    },
+    {
+        "operation": "Measuring DNA concentration",
+        "reagent": "amplification product",
+        "equipments": "spectrophotometer",
+        "condition": "None"
+    },
+    {
+        "operation": "Measure DNA concentration",
+        "reagent": "amplification product, d2H2O",
+        "equipments": "Nanodrop 2000",
+        "condition": "None"
+    },
+    {
+        "operation": "DNA Library construction",
+        "reagent": "DNA sample, restriction enzymes, DNA ligase, adapters",
+        "equipments": "centrifuge, PCR machine",
+        "condition": "digestion with restriction enzymes, ligation with adapters, PCR amplification"
+    },
+    {
+        "operation": "Dilution",
+        "reagent": "DNA",
+        "equipments": "None",
+        "condition": "Dilute DNA to 1.2μg in 60μl."
+    },
+    {
+        "operation": "Fragmentation",
+        "reagent": "Diluted DNA",
+        "equipments": "Bioruptor UCD-200",
+        "condition": "Sonication at ~5℃for a few cycles (30s sonication and 30s rest per one cycle), so that most of the DNA fragments range from 300bp to 500bp."
+    },
+    {
+        "operation": "Agarose gel electrophoresis",
+        "reagent": "2% Agarose gel",
+        "equipments": "Electrophoresis apparatus",
+        "condition": "None"
+    },
+    {
+        "operation": "Sonication",
+        "reagent": "None",
+        "equipments": "Sonication machine",
+        "condition": "continue sonicating a few more cycles until the suitable size of fragments are generated. The number of cycles depends on when the fragments reach 300bp to 500bp; the mean number of cycles would be ten."
+    },
+    {
+        "operation": "End repair",
+        "reagent": "End Repair Mix, Resuspension Buffer",
+        "equipments": null,
+        "condition": "incubate at 30℃ for 30min"
+    },
+    {
+        "operation": "Purification",
+        "reagent": "Agencourt Ampure XP beads, Resuspension Buffer, 80% EtOH",
+        "equipments": "magnetic stand, 200μl pipette",
+        "condition": "Keep the Beads at room temperature (RT) and vortex briefly. Add 160μl Beads to 100μl of the end repaired sample. Mix thoroughly, then incubate at RT for 15min. Place this sample on a magnetic stand at RT for 15min. Aspirate and discard the supernatant using a 200μl pipette. Add 200μl fresh 80% EtOH, incubate at RT for 30s, remove and discard the supernatant. Add 200μl fresh 80% EtOH again to complete the washing, incubate at RT for 30s, remove and discard the supernatant. Let the sample dry at RT for ~5-10min. Remove the sample containing Beads from the magnetic stand, then add 17.5μl Resuspension Buffer to the Beads. Mix thoroughly and incubate at RT for 2min. Place the sample again on the magnetic stand at RT for 5min. Finally, transfer 15μl of the supernatant into a new PCR well for the next step."
+    },
+    {
+        "operation": "Adenylate 3’ end",
+        "reagent": "Resuspension Buffer, A Tailing Mix",
+        "equipments": "PCR well",
+        "condition": "incubate at 37℃ for 30min."
+    },
+    {
+        "operation": "Ligation of Adapters",
+        "reagent": "Resuspension Buffer, Index, Ligation Mix, Stop Buffer",
+        "equipments": "PCR well",
+        "condition": "incubate at 30℃ for 10min."
+    },
+    {
+        "operation": "Purification",
+        "reagent": "Agencourt Ampure XP beads, 80% EtOH, Resuspension Buffer",
+        "equipments": "magnetic stand, 200μl pipette",
+        "condition": "Add 42.5μl Beads to 42.5μl of the Ligation sample. Mix thoroughly, then incubate at RT for 15min. Place the sample on a magnetic stand at RT for 5min. Remove and discard the supernatant using a 200μl pipette. Add 200μl fresh 80% EtOH, incubate at RT for 30s, remove and discard the supernatant. Add 200μl fresh 80% EtOH again to complete the washing, incubate at RT for 30s, remove and discard the supernatant. Let the sample dry at RT for ~5-10min. Keep this sample containing Beads away from the magnetic stand, then add 22.5μl Resuspension Buffer. Mix thoroughly and incubate at RT for 2min. Place the sample on the magnetic stand at RT for 5min. Finally, transfer 20μl of the supernatant into a new PCR well for the next step."
+    },
+    {
+        "operation": "Size selection by MinElute Gel Extraction Kit",
+        "reagent": "QG Buffer, isopropanol, PE Buffer, EB Buffer",
+        "equipments": "2% Agarose gel, MinElute column, 2ml collection tube, 1.5ml tube, centrifuge",
+        "condition": "excise gel segment containing the main target band, which should be limited in size range of 100bp. Add 900μl QG Buffer to 2ml tube containing 300mg gel. Incubate it at RT until gel melts completely. Add 300μl isopropanol, and mix thoroughly. Place a MinElute column in a new 2ml collection tube. Transfer 750μl of the melted sample in the MinElute column, centrifuge for 1min at 13000 rpm and discard the flow-through. Repeatedly transfer another 750μl and centrifuge. Add 500μl QG Buffer to the column, centrifuge for 1min and discard flow-through. Add 750μl PE Buffer to the column, stand for 5min, then centrifuge for 1min and discard flow-through. Centrifuge for 1min one more time to remove residual ethanol completely. Place the column into a clean 1.5ml tube. Let it dry at RT for 5min. Add 23μl EB Buffer onto the center of column membrane, incubate it at RT for 3min, then centrifuge it for 1 min. The flow-through is collected and added onto the center of the same column membrane, incubate it at RT for 3min, then centrifuge for 1 min. Now the flow-thorough is the sample purified for PCR reaction."
+    },
+    {
+        "operation": "PCR amplification",
+        "reagent": "Primer, PCR Mix",
+        "equipments": "PCR machine",
+        "condition": "cycling parameters"
+    },
+    {
+        "operation": "Purification",
+        "reagent": "Agencourt Ampure XP beads, Resuspension Buffer, 80% EtOH",
+        "equipments": "magnetic stand, 200μl pipette",
+        "condition": "Keep the Beads at room temperature (RT) and vortex. Add 50μl Beads to 50μl of the PCR sample. Mix thoroughly, then incubate it at RT for 15min. Place this PCR sample on a magnetic stand at RT for 5min. Remove and discard the supernatant using a 200μl pipette. Add 200μl fresh 80% EtOH, incubate at RT for 30s, remove and discard the supernatant. Add 200μl fresh 80% EtOH again to complete the washing, incubate at RT for 30s, remove and discard the supernatant. Let the sample dry at RT for ~5-10min. Place the sample with the Beads away from the magnetic stand, then add 22.5μl Resuspension Buffer to the Beads. Mix thoroughly and incubate at RT for 2min. Place the sample on the magnetic stand at RT for 5min again. Finally, transfer 20μl of the supernatant into a new PCR well."
+    }
+]

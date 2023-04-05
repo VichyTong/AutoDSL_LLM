@@ -1,0 +1,170 @@
+[
+    {
+        "operation": "harvesting",
+        "reagent": "top ~30 cm part containing tassels",
+        "equipment": "flask filled with water",
+        "condition": "None"
+    },
+    {
+        "operation": "release cells",
+        "reagent": "Isolation Buffer",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "separate microspores",
+        "reagent": "glass tools",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "MDA Amplification",
+        "reagent": "D-sorbitol, QIAGEN REPLI-g Single Cell Kit, single cell DNA, 10×PCR Buffer, dNTP, rTaq, d2H2O",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "DNA purification",
+        "reagent": "Agencourt Ampure XP beads, 80% EtOH",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "DNA extraction",
+        "reagent": "MinElute Gel Extraction Kit",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "DNA sample preparation",
+        "reagent": "TruSeq DNA Sample Prep v2 Kit",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "PCR",
+        "reagent": "diluted DNA, forward primer, reverse primer, 10×PCR Buffer, dNTP, rTaq, d2H2O",
+        "equipment": "None",
+        "condition": "cycling parameter"
+    },
+    {
+        "operation": "2% Agarose gel electrophoresis",
+        "reagent": "Polymerase chain reaction product",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "PCR amplification",
+        "reagent": "QIAGEN REPLI-g Single Cell Kit, 10×PCR Buffer, dNTP, rTaq, d2H2O",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "library preparation",
+        "reagent": "TruSeq DNA Sample Prep v2 Kit",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "DNA purification",
+        "reagent": "Agencourt Ampure XP beads, 80% EtOH, MinElute Gel Extraction Kit",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "measuring DNA concentration",
+        "reagent": "Polymerase chain reaction product",
+        "equipment": "spectrophotometer",
+        "condition": "None"
+    },
+    {
+        "operation": "None",
+        "reagent": "amplification product, d2H2O",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "Nanodrop 200",
+        "reagent": "DNA concentration",
+        "equipment": "Nanodrop 200",
+        "condition": "None"
+    },
+    {
+        "operation": "DNA fragmentation",
+        "reagent": "None",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "mixing",
+        "reagent": "End Repair Mix, DNA fragmented",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "mixing",
+        "reagent": "Resuspension Buffer, DNA fragmented",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "incubation",
+        "reagent": "mixture",
+        "equipment": "None",
+        "condition": "30℃ for 30mi"
+    },
+    {
+        "operation": "purification",
+        "reagent": "Agencourt Ampure XP beads, end repaired sample, fresh 80% EtOH, resuspension buffer",
+        "equipment": "magnetic stand",
+        "condition": "incubated at room temperature for 15 min; incubating at room temperature for 30s; dried at room temperature for ~5-10min"
+    },
+    {
+        "operation": "washing",
+        "reagent": "None",
+        "equipment": "None",
+        "condition": "incubating at room temperature for 30s"
+    },
+    {
+        "operation": "2nd purification",
+        "reagent": "Agencourt Ampure XP beads",
+        "equipment": "magnetic stand",
+        "condition": "incubated at room temperature for 15 min; placed on magnetic stand for 5 min; washed with 80% EtOH; dried at room temperature for ~5-10min; added Resuspension Buffer; incubated at room temperature for 2 min; placed on magnetic stand for 5 min"
+    },
+    {
+        "operation": "transfer",
+        "reagent": "Supernatant",
+        "equipment": "None",
+        "condition": "transferred to a new PCR well for the next ste"
+    },
+    {
+        "operation": "electrophoresis",
+        "reagent": "2% Agarose gel",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "size selection",
+        "reagent": "MinElute Gel Extraction Kit",
+        "equipment": "None",
+        "condition": "None"
+    },
+    {
+        "operation": "gel extraction",
+        "reagent": "QG Buffer, isopropanol, MinElute column, PE Buffer, EB Buffer",
+        "equipment": "2ml tube, 2ml collection tube, clean 1.5ml tube",
+        "condition": "centrifugation"
+    },
+    {
+        "operation": "3rd purification",
+        "reagent": "Agencourt Ampure XP beads",
+        "equipment": "magnetic stand",
+        "condition": "PCR sample mixed with 50μl Beads, incubated at RT for 15min, placed on magnetic stand at RT for 5min, supernatant removed and discarded using 200μl pipette, fresh 80% EtOH added to PCR sample, incubated at RT for 30s, supernatant removed and discarded, fresh 80% EtOH added again to PCR sample, incubated at RT for 30s, sample dried at RT for ~5-10min"
+    },
+    {
+        "operation": "library",
+        "reagent": "PCR sample, Resuspension Buffer",
+        "equipment": "magnetic stand",
+        "condition": "sample incubated at RT for 2min, placed on magnetic stand at RT for 5min, supernatant transferred into new PCR well, stored at -20℃ for up to two months, qualified and quantified for pair-end sequencing on Illumina Hiseq 2000 platform"
+    }
+]
