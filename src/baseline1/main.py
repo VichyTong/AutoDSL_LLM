@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import sys
 
 import openai
 
@@ -103,7 +104,7 @@ def get_classifications(relations):
         messages=[
             {"role": "system", "content": "You are a helpful assistant to categorize among the provided relationships, classify set of relationships that have operations, reagents, equipments, and conditions. Out put in json form. If there is no relationships, just output a single word \"None\"."},
             {"role": "user", "content": "['PSTCD BAP sequence', 'amplified by', 'PCR'], ['pXa-1 plasmid', 'used for', 'PCR amplification'], ['Pfu buffer', 'added in', 'PCR reaction'], ['upstream and downstream primer', 'added in', 'PCR reaction'], ['PCR reaction', 'set with conditions of', '35 cycles of denaturation, annealing, and extension'], ['PCR reaction', 'set with conditions of', 'final extension ste']"},
-            {"role": "assistant", "content": '[{"operation": "PCR reaction", "reagent": "pXa-1 plasmid, Pfu buffer, upstream and downstream primer", "equipment": "None", "condition": "35 cycles of denaturation, annealing, and extension; final extension ste"}]'},
+            {"role": "assistant", "content": '[{"operation": "add", "reagent": "Pfu buffer, PCR reaction", "equipment": "None", "condition": "5 cycles of denaturation, annealing, and extension"}, {"operation": "add", "reagent": "upstream and downstream primer, PCR reaction", "equipment": "None", "condition": "5 cycles of denaturation, annealing, and extension"}]'},
             {"role": "user", "content": relations}
         ],
         max_tokens=1000,
@@ -154,6 +155,7 @@ def parse_file(path, filename):
                     classification = get_classifications(str(relations))
                     if classification is not None:
                         for x in classification:
+                            x["origin"] = procedure
                             classifications.append(x)
                     relations.clear()
         with open("../../output/baseline1/" + "KG_" + filename, "w", encoding='utf8') as out:
@@ -163,9 +165,7 @@ def parse_file(path, filename):
 
 
 if __name__ == "__main__":
-    for f_name in os.listdir('../../protocols'):
-        if f_name.startswith('protocol'):
-            print(f_name)
-            parse_file('../../protocols/', f_name)
-            break
+    f_name = sys.argv[1]
+    print("../../protocols/" + f_name)
+    parse_file('../../protocols/', f_name)
 

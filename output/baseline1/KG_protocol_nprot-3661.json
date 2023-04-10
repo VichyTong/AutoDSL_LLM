@@ -12,7 +12,7 @@
     [
         "entity",
         "relation",
-        "entity) \n\n(spikelet",
+        "entity): (spikelet",
         "contains",
         "three older and three younger anthers"
     ],
@@ -23,12 +23,11 @@
     ],
     [
         "Isolation Buffer",
-        "used to",
-        "release cells"
+        "used to release cells"
     ],
     [
         "samples",
-        "identified containing",
+        "identified as containing",
         "last-stage tetrads"
     ],
     [
@@ -38,13 +37,8 @@
     ],
     [
         "glass tools",
-        "used to",
-        "separate microspores"
-    ],
-    [
-        "last-stage tetrads",
-        "do not adhere to",
-        "glass tool"
+        "used to separate microspores",
+        "from last-stage tetrad"
     ],
     [
         "D-sorbitol",
@@ -102,16 +96,6 @@
         "DNA extractio"
     ],
     [
-        "diluted amplification product",
-        "used for",
-        "PCR amplification"
-    ],
-    [
-        "10 markers from Table 1",
-        "used for",
-        "PCR amplificatio"
-    ],
-    [
         "diluted DNA",
         "added in",
         "PCR mixture"
@@ -158,7 +142,7 @@
     ],
     [
         "Sample",
-        "considered of sufficient quality to make a library",
+        "considered of sufficient quality",
         "if no less than 8 of the 10 markers are successfully amplified"
     ],
     [
@@ -224,12 +208,7 @@
     [
         "DNA fragmented",
         "mixed with",
-        "End Repair Mix"
-    ],
-    [
-        "DNA fragmented",
-        "mixed with",
-        "Resuspension Buffer"
+        "End Repair Mix and Resuspension Buffer"
     ],
     [
         "mixture",
@@ -281,11 +260,6 @@
         "beads"
     ],
     [
-        "sample",
-        "placed on",
-        "magnetic stand"
-    ],
-    [
         "supernatant",
         "transferred into",
         "new PCR wel"
@@ -301,64 +275,74 @@
         "Agencourt Ampure XP beads"
     ],
     [
-        "Agencourt Ampure XP beads",
+        "sample",
         "incubated at",
         "room temperature for 15 min"
     ],
     [
-        "Ligation sample",
+        "sample",
         "placed on",
         "magnetic stand for 5 min"
     ],
     [
-        "Supernatant",
+        "supernatant",
         "removed and discarded",
         "using a 200μl pipette"
     ],
     [
-        "80% EtOH",
-        "added",
-        "to the sample"
+        "fresh 80% EtOH",
+        "added to",
+        "sample"
     ],
     [
-        "Sample",
+        "sample",
         "incubated at",
         "room temperature for 30s"
     ],
     [
-        "Supernatant",
+        "supernatant",
         "removed and discarded",
         "using a 200μl pipette"
     ],
     [
-        "Sample",
-        "washed again with",
-        "80% EtOH"
+        "fresh 80% EtOH",
+        "added again to",
+        "sample"
     ],
     [
-        "Sample",
+        "sample",
+        "incubated at",
+        "room temperature for 30s"
+    ],
+    [
+        "supernatant",
+        "removed and discarded",
+        "using a 200μl pipette"
+    ],
+    [
+        "sample",
         "dried at",
         "room temperature for ~5-10min"
     ],
     [
         "Resuspension Buffer",
         "added to",
-        "sample containing beads"
+        "sample"
     ],
     [
-        "Sample",
+        "sample",
         "incubated at",
-        "room temperature for 2 min"
+        "room temperature for 2min"
     ],
     [
-        "Sample",
+        "sample",
         "placed on",
-        "magnetic stand for 5 min"
+        "magnetic stand for 5min"
     ],
     [
-        "Supernatant",
-        "transferred",
-        "to a new PCR well for the next ste"
+        "supernatant",
+        "transferred into",
+        "new PCR wel"
     ],
     [
         "2% Agarose gel",
@@ -371,19 +355,19 @@
         "size selection"
     ],
     [
+        "gel segment",
+        "excised containing",
+        "main target band"
+    ],
+    [
         "QG Buffer",
         "added to",
         "2ml tube containing 300mg gel"
     ],
     [
-        "gel",
-        "melted completely",
-        "after incubation with QG Buffer"
-    ],
-    [
-        "isopropanol",
-        "added to",
-        "melted gel sample"
+        "melted sample",
+        "mixed with",
+        "isopropanol"
     ],
     [
         "MinElute column",
@@ -403,17 +387,22 @@
     [
         "QG Buffer",
         "added to",
-        "column and centrifuged"
+        "column"
     ],
     [
         "PE Buffer",
         "added to",
-        "column and centrifuged"
+        "column"
+    ],
+    [
+        "centrifugation",
+        "used to",
+        "discard flow-through"
     ],
     [
         "residual ethanol",
-        "removed completely",
-        "by centrifugation"
+        "removed completely by",
+        "centrifugation"
     ],
     [
         "column",
@@ -431,9 +420,8 @@
         "collect flow-through"
     ],
     [
-        "sample purified for PCR reaction",
-        "obtained after",
-        "flow-through collectio"
+        "sample purified for",
+        "PCR reactio"
     ],
     [
         "Agencourt Ampure XP beads",
@@ -457,13 +445,13 @@
     ],
     [
         "supernatant",
-        "removed and discarded using",
-        "200μl pipette"
+        "removed and discarded",
+        "using a 200μl pipette"
     ],
     [
         "fresh 80% EtOH",
-        "added to",
-        "PCR sample"
+        "added",
+        "200μl"
     ],
     [
         "PCR sample",
@@ -472,12 +460,13 @@
     ],
     [
         "supernatant",
-        "removed and discarded"
+        "removed and discarded",
+        "using a 200μl pipette"
     ],
     [
         "fresh 80% EtOH",
-        "added again to",
-        "PCR sample"
+        "added again to complete washing",
+        "200μl"
     ],
     [
         "PCR sample",
@@ -486,7 +475,8 @@
     ],
     [
         "supernatant",
-        "removed and discarded"
+        "removed and discarded",
+        "using a 200μl pipette"
     ],
     [
         "sample",
@@ -520,7 +510,7 @@
     ],
     [
         "library",
-        "qualified and quantified for",
-        "pair-end sequencing on Illumina Hiseq 2000 platform"
+        "qualified and quantified",
+        "for pair-end sequencing on Illumina Hiseq 2000 platfor"
     ]
 ]
