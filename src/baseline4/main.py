@@ -40,6 +40,8 @@ def get_classifications(instruction, relations):
         messages=[
             {"role": "system",
              "content": "You are a helpful assistant to summarize the procedure, classify set of relationships in the form of instructions. Out put in json form. Do not output other words. If there is no relationships, just output a single word \"None\"."},
+            {"role": "system",
+             "content": "Here is a instruction for you to learn from:" + instruction},
             {"role": "user",
              "content": "Polymerase chain reaction. The PSTCD BAP sequence \\(387 bp) is first amplified by PCR from pXa-1 plasmad \\(Promega, Madison, WI) as follows: for each reaction, add 5 \u00b5l Pfu buffer \\ (10x buffer), 2.5 \u00b5l of each upstream and downstream primer \\(10 \u03bcM), 1.5 \u00b5l dNTPs mix \\(5 mM). Set the conditions for the PCR as follows: an initial denaturation step at 95 <sup>o</sup>C for 3 min followed by 35 cycles of 30 sec 95 <sup>o</sup>C denaturation, 30 sec 48 <sup>o</sup>C annealing, 1 min 72 <sup>o</sup>C extension and a final extension step of 10 min."},
             {"role": "assistant",
